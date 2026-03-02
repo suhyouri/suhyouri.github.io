@@ -400,17 +400,19 @@
       }
 
       .slider-dot {
-        width: 8px;
-        height: 8px;
+        width: 7px;
+        height: 7px;
         border-radius: 50%;
-        background: rgba(255, 255, 255, 0.5);
-        border: 1px solid #000;
+        background: transparent;
+        border: 1px solid #fff;
         cursor: pointer;
         transition: all 0.2s;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
       }
 
       .slider-dot.active {
-        background: #000;
+        background: #fff;
+        border: 1px solid #fff;
       }
 
       .panel-links {
@@ -786,18 +788,18 @@
       let currentSlide = 0;
 
       function initImageSlider() {
-        const slider = document.querySelector('.image-slider');
+        const slider = document.querySelector(".image-slider");
         if (!slider) return;
 
-        const images = slider.querySelectorAll('.slider-container img');
+        const images = slider.querySelectorAll(".slider-container img");
         if (images.length <= 1) {
           // Hide controls if only one image
-          const prevBtn = slider.querySelector('.prev');
-          const nextBtn = slider.querySelector('.next');
-          const dots = slider.querySelector('.slider-dots');
-          if (prevBtn) prevBtn.style.display = 'none';
-          if (nextBtn) nextBtn.style.display = 'none';
-          if (dots) dots.style.display = 'none';
+          const prevBtn = slider.querySelector(".prev");
+          const nextBtn = slider.querySelector(".next");
+          const dots = slider.querySelector(".slider-dots");
+          if (prevBtn) prevBtn.style.display = "none";
+          if (nextBtn) nextBtn.style.display = "none";
+          if (dots) dots.style.display = "none";
           return;
         }
 
@@ -806,10 +808,10 @@
       }
 
       function moveSlide(direction) {
-        const slider = document.querySelector('.image-slider');
+        const slider = document.querySelector(".image-slider");
         if (!slider) return;
 
-        const images = slider.querySelectorAll('.slider-container img');
+        const images = slider.querySelectorAll(".slider-container img");
         const totalSlides = images.length;
 
         currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
@@ -822,15 +824,15 @@
       }
 
       function updateSlider() {
-        const container = document.querySelector('.slider-container');
-        const dots = document.querySelectorAll('.slider-dot');
+        const container = document.querySelector(".slider-container");
+        const dots = document.querySelectorAll(".slider-dot");
 
         if (container) {
           container.style.transform = `translateX(-${currentSlide * 100}%)`;
         }
 
         dots.forEach((dot, index) => {
-          dot.classList.toggle('active', index === currentSlide);
+          dot.classList.toggle("active", index === currentSlide);
         });
       }
 
