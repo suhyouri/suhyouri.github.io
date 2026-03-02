@@ -1,0 +1,851 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youri Suh — Visual Artist</title>
+    <meta
+      name="description"
+      content="Korean visual artist based in Seoul, working with play and electronic circuits. Running WMLAlive project exploring the body and presence since 2023."
+    />
+    <meta
+      name="keywords"
+      content="Youri Suh, Visual Artist, Electronic Art, WMLAlive, K-Arts, Media Art, Circuit Art, Performance Art, Seoul Artist"
+    />
+    <meta name="author" content="Youri Suh" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://yourisuh.github.io/cv/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourisuh.github.io/cv/" />
+    <meta property="og:title" content="Youri Suh — Visual Artist" />
+    <meta
+      property="og:description"
+      content="Korean visual artist based in Seoul, working with play and electronic circuits. Running WMLAlive project exploring the body and presence."
+    />
+    <meta
+      property="og:image"
+      content="https://yourisuh.github.io/cv/assets/ogimage.png"
+    />
+    <meta property="og:image:alt" content="Youri Suh Visual Artist Portfolio" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="ko_KR" />
+
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#8af84f" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon_1.ico" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      @keyframes gradientMove {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 50% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      body {
+        background: linear-gradient(-20deg, #8af84f 20%, #ffffff 80%);
+        background-size: 200% 200%;
+        animation: gradientMove 30s ease infinite;
+        min-height: 100vh;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI",
+          "Apple SD Gothic Neo", sans-serif;
+        padding: 40px 50px;
+        line-height: 1.6;
+        color: #000;
+      }
+
+      h1 {
+        font-size: 32px;
+        font-weight: 400;
+        margin-bottom: 40px;
+        letter-spacing: -0.02em;
+      }
+
+      h1 a {
+        color: #000;
+        text-decoration: none;
+        transition: opacity 0.2s;
+      }
+
+      h1 a:hover {
+        opacity: 0.7;
+      }
+
+      .intro {
+        font-size: 20px;
+        font-weight: 400;
+        max-width: 600px;
+        margin-bottom: 40px;
+        line-height: 1.5;
+      }
+
+      .intro a {
+        color: #000;
+        text-decoration: underline;
+      }
+
+      .intro a:hover {
+        opacity: 0.7;
+      }
+
+      .section-title {
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+
+      .project-list {
+        list-style: none;
+        margin-bottom: 50px;
+      }
+
+      .project-list li {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 8px;
+        display: flex;
+        gap: 20px;
+      }
+
+      .project-list .number {
+        flex-shrink: 0;
+      }
+
+      .project-list a {
+        color: #000;
+        text-decoration: none;
+      }
+
+      .project-list a:hover {
+        text-decoration: underline;
+      }
+
+      .contact {
+        margin-top: 50px;
+      }
+
+      .contact-title {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 10px;
+      }
+
+      .contact a {
+        font-size: 20px;
+        color: #000;
+        text-decoration: none;
+        display: block;
+        padding-left: 20px;
+      }
+
+      .contact a:hover {
+        text-decoration: underline;
+      }
+
+      .more {
+        margin-top: 60px;
+        font-size: 20px;
+      }
+
+      .more a {
+        color: #000;
+        text-decoration: none;
+      }
+
+      .more a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      /* Archives Grid */
+      .archives-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+      }
+
+      .archive-item {
+        position: relative;
+        aspect-ratio: 1;
+        overflow: hidden;
+        cursor: pointer;
+        background: #f5f5f5;
+      }
+
+      .archive-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .archive-item::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #8af84f;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .archive-item:hover::after {
+        opacity: 0.6;
+      }
+
+      .archive-item:hover img {
+        transform: scale(1.05);
+      }
+
+      .lang-toggle {
+        position: fixed;
+        top: 40px;
+        right: 50px;
+        background: none;
+        border: 1px solid #000;
+        padding: 8px 16px;
+        font-size: 14px;
+        cursor: pointer;
+        font-family: inherit;
+        transition: all 0.2s;
+      }
+
+      .lang-toggle:hover {
+        background: #000;
+        color: #fff;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      /* Overlay */
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 999;
+      }
+
+      .overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      /* Slide Panel */
+      .slide-panel {
+        position: fixed;
+        top: 0;
+        right: -75%;
+        width: 75%;
+        height: 100vh;
+        background: #fff;
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+        transition: right 0.4s ease;
+        z-index: 1000;
+        overflow-y: auto;
+        padding: 60px 80px;
+      }
+
+      .slide-panel.active {
+        right: 0;
+      }
+
+      .close-btn {
+        position: absolute;
+        top: 40px;
+        right: 50px;
+        background: none;
+        border: 1px solid #000;
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s;
+        line-height: 1;
+      }
+
+      .close-btn:hover {
+        background: #000;
+        color: #fff;
+      }
+
+      .panel-title {
+        font-size: 36px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        letter-spacing: -0.02em;
+      }
+
+      .panel-meta {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 40px;
+        line-height: 1.8;
+      }
+
+      .panel-description {
+        font-size: 18px;
+        line-height: 1.8;
+        margin-bottom: 40px;
+        max-width: 600px;
+      }
+
+      .panel-image {
+        width: 100%;
+        max-width: 700px;
+        aspect-ratio: 16/9;
+        background: #f5f5f5;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #999;
+        font-size: 14px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .panel-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* Image Slider */
+      .image-slider {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+
+      .slider-container {
+        display: flex;
+        transition: transform 0.4s ease;
+        height: 100%;
+      }
+
+      .slider-container img {
+        min-width: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .slider-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        width: 40px;
+        height: 40px;
+        font-size: 32px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.2s;
+        z-index: 10;
+        color: #fff;
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+      }
+
+      .slider-btn:hover {
+        opacity: 0.7;
+      }
+
+      .slider-btn.prev {
+        left: 10px;
+      }
+
+      .slider-btn.next {
+        right: 10px;
+      }
+
+      .slider-dots {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+        z-index: 10;
+      }
+
+      .slider-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        border: 1px solid #000;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+
+      .slider-dot.active {
+        background: #000;
+      }
+
+      .panel-links {
+        margin-top: 40px;
+      }
+
+      .panel-links a {
+        display: inline-block;
+        margin-right: 20px;
+        color: #000;
+        text-decoration: underline;
+        font-size: 16px;
+      }
+
+      .panel-links a:hover {
+        opacity: 0.7;
+      }
+
+      @media (max-width: 768px) {
+        .lang-toggle {
+          top: 30px;
+          right: 25px;
+        }
+        body {
+          padding: 30px 25px;
+        }
+
+        h1 {
+          font-size: 26px;
+        }
+
+        .intro,
+        .section-title,
+        .project-list li,
+        .contact-title,
+        .contact a,
+        .more {
+          font-size: 18px;
+        }
+
+        .slide-panel {
+          width: 100%;
+          right: -100%;
+          padding: 40px 30px;
+        }
+
+        .close-btn {
+          top: 30px;
+          right: 25px;
+        }
+
+        .panel-title {
+          font-size: 28px;
+        }
+
+        .panel-description {
+          font-size: 16px;
+        }
+
+        .archives-grid {
+          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+          gap: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button class="lang-toggle" onclick="toggleLanguage()">한국어</button>
+
+    <h1 class="en">
+      <a href="https://www.instagram.com/suhyouri" target="_blank"
+        >✦ Youri Suh</a
+      >
+    </h1>
+    <h1 class="kr hidden">
+      <a href="https://www.instagram.com/suhyouri" target="_blank">✦ 서유리</a>
+    </h1>
+
+    <div class="intro en">
+      Korean visual artist based in Seoul, working with play and electronic
+      circuits. Since 2023, running
+      <a href="https://suhyouri.notion.site/wmlalive" target="_blank"
+        >WMLAlive</a
+      >
+      (What Makes Life Alive), exploring the body and presence. Currently
+      pursuing M.A. in Multimedia Film, Korea National University of Arts
+      (K-Arts)
+      <a
+        href="https://docs.google.com/spreadsheets/d/1ao-aG1dgYMqpoyXcIakViJjb6JwubJEjQ7LO8maTOd4/edit?usp=sharing"
+        target="_blank"
+        >→ CV</a
+      >.
+    </div>
+
+    <div class="intro kr hidden">
+      서울을 기반으로 활동하는 시각예술창작자입니다. 놀이와 전기 회로를 매체로
+      작업하며, 2023년부터 신체를 중심 주제로 한 개인 프로젝트
+      <a href="https://suhyouri.notion.site/wmlalive" target="_blank"
+        >WMLAlive</a
+      >
+      (What Makes Life Alive)를 진행하고 있습니다. 현재 한국예술종합학교
+      멀티미디어 영상과 석사과정 재학중입니다.
+      <a
+        href="https://docs.google.com/spreadsheets/d/1ao-aG1dgYMqpoyXcIakViJjb6JwubJEjQ7LO8maTOd4/edit?usp=sharing"
+        target="_blank"
+        >→ CV</a
+      >.
+    </div>
+
+    <div class="section-title en">Projects:</div>
+    <div class="section-title kr hidden">프로젝트:</div>
+
+    <ul class="project-list en">
+      <li>
+        <span class="number">01</span>
+        <a
+          href="#"
+          onclick="
+            openProject('wmlalive');
+            return false;
+          "
+          >WMLAlive: The Body as an Island</a
+        >
+      </li>
+      <li>
+        <span class="number">02</span>
+        <a
+          href="#"
+          onclick="
+            openProject('research');
+            return false;
+          "
+          >Research on the Walking Methods of Inanimate Objects</a
+        >
+      </li>
+      <li>
+        <span class="number">03</span>
+        <a
+          href="#"
+          onclick="
+            openProject('circuit');
+            return false;
+          "
+          >Circuit Making Memories — PCB ⓐ-ⓔ Kit
+        </a>
+      </li>
+      <li>
+        <span class="number">04</span>
+        <a
+          href="#"
+          onclick="
+            openProject('game');
+            return false;
+          "
+          >Pointless Sight</a
+        >
+      </li>
+    </ul>
+
+    <ul class="project-list kr hidden">
+      <li>
+        <span class="number">01</span>
+        <a
+          href="#"
+          onclick="
+            openProject('wmlalive');
+            return false;
+          "
+          >몸이라는 섬</a
+        >
+      </li>
+      <li>
+        <span class="number">02</span>
+        <a
+          href="#"
+          onclick="
+            openProject('research');
+            return false;
+          "
+          >무생물의 걷기 방법에 대한 연구</a
+        >
+      </li>
+      <li>
+        <span class="number">03</span>
+        <a
+          href="#"
+          onclick="
+            openProject('circuit');
+            return false;
+          "
+          >기억을 만드는 회로 — PCB ⓐ-ⓔ 키트</a
+        >
+      </li>
+      <li>
+        <span class="number">04</span>
+        <a
+          href="#"
+          onclick="
+            openProject('game');
+            return false;
+          "
+          >영-영</a
+        >
+      </li>
+    </ul>
+
+    <div class="section-title en">Workshops:</div>
+    <div class="section-title kr hidden">워크샵:</div>
+
+    <ul class="project-list en">
+      <li>
+        <span class="number">01</span>
+        <a
+          href="#"
+          onclick="
+            openProject('workshop1');
+            return false;
+          "
+          >Inanimate Techno Party Workshop, Art Korea Lab</a
+        >
+      </li>
+      <li>
+        <span class="number">02</span>
+        <a
+          href="#"
+          onclick="
+            openProject('workshop2');
+            return false;
+          "
+          >1 bit Memory Circuit ⓑ Workshop, PSO</a
+        >
+      </li>
+      <li>
+        <span class="number">03</span>
+        <a
+          href="#"
+          onclick="
+            openProject('workshop3');
+            return false;
+          "
+          >Physical Computing, Department of Intermedia Arts, Kaywon University
+          of Art & Design</a
+        >
+      </li>
+    </ul>
+
+    <ul class="project-list kr hidden">
+      <li>
+        <span class="number">01</span>
+        <a
+          href="#"
+          onclick="
+            openProject('workshop1');
+            return false;
+          "
+          >무생물 테크노 파티, 아트코리아랩</a
+        >
+      </li>
+      <li>
+        <span class="number">02</span>
+        <a
+          href="#"
+          onclick="
+            openProject('workshop2');
+            return false;
+          "
+          >기억을 만드는 회로 ⓑ, PSO</a
+        >
+      </li>
+      <li>
+        <span class="number">03</span>
+        <a
+          href="#"
+          onclick="
+            openProject('workshop3');
+            return false;
+          "
+          >컴퓨터크리에이션, 계원예술대학교 융합예술과</a
+        >
+      </li>
+    </ul>
+
+    <div class="contact">
+      <div class="contact-title en">Contact:</div>
+      <div class="contact-title kr hidden">문의:</div>
+      <a href="mailto:suhyouri@gmail.com">suhyouri@gmail.com</a>
+    </div>
+
+    <div class="more en">
+      <a
+        href="#"
+        onclick="
+          openProject('archives');
+          return false;
+        "
+        >→ Archives</a
+      >
+    </div>
+    <div class="more kr hidden">
+      <a
+        href="#"
+        onclick="
+          openProject('archives');
+          return false;
+        "
+        >아카이브</a
+      >
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" onclick="closePanel()"></div>
+
+    <!-- Slide Panel -->
+    <div class="slide-panel">
+      <button class="close-btn" onclick="closePanel()">×</button>
+      <div id="panel-content">
+        <!-- Content will be dynamically loaded -->
+      </div>
+    </div>
+
+    <script>
+      let currentLang = "en";
+
+      function toggleLanguage() {
+        const enElements = document.querySelectorAll(".en");
+        const krElements = document.querySelectorAll(".kr");
+        const button = document.querySelector(".lang-toggle");
+
+        if (currentLang === "en") {
+          enElements.forEach((el) => el.classList.add("hidden"));
+          krElements.forEach((el) => el.classList.remove("hidden"));
+          button.textContent = "English";
+          currentLang = "kr";
+        } else {
+          enElements.forEach((el) => el.classList.remove("hidden"));
+          krElements.forEach((el) => el.classList.add("hidden"));
+          button.textContent = "한국어";
+          currentLang = "en";
+        }
+      }
+
+      // Load project content from external HTML files
+      async function openProject(projectId) {
+        const lang = currentLang;
+        const fileName = `projects/${projectId}-${lang}.html`;
+
+        try {
+          const response = await fetch(fileName);
+          if (!response.ok) throw new Error("File not found");
+
+          const html = await response.text();
+          document.getElementById("panel-content").innerHTML = html;
+
+          document.querySelector(".overlay").classList.add("active");
+          document.querySelector(".slide-panel").classList.add("active");
+          document.body.style.overflow = "hidden";
+
+          // Initialize image slider if present
+          initImageSlider();
+        } catch (error) {
+          console.error("Error loading project:", error);
+          document.getElementById("panel-content").innerHTML = `
+            <h2 class="panel-title">Project not found</h2>
+            <div class="panel-description">Sorry, this project content is not available yet.</div>
+          `;
+          document.querySelector(".overlay").classList.add("active");
+          document.querySelector(".slide-panel").classList.add("active");
+          document.body.style.overflow = "hidden";
+        }
+      }
+
+      // Image slider functionality
+      let currentSlide = 0;
+
+      function initImageSlider() {
+        const slider = document.querySelector('.image-slider');
+        if (!slider) return;
+
+        const images = slider.querySelectorAll('.slider-container img');
+        if (images.length <= 1) {
+          // Hide controls if only one image
+          const prevBtn = slider.querySelector('.prev');
+          const nextBtn = slider.querySelector('.next');
+          const dots = slider.querySelector('.slider-dots');
+          if (prevBtn) prevBtn.style.display = 'none';
+          if (nextBtn) nextBtn.style.display = 'none';
+          if (dots) dots.style.display = 'none';
+          return;
+        }
+
+        currentSlide = 0;
+        updateSlider();
+      }
+
+      function moveSlide(direction) {
+        const slider = document.querySelector('.image-slider');
+        if (!slider) return;
+
+        const images = slider.querySelectorAll('.slider-container img');
+        const totalSlides = images.length;
+
+        currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+        updateSlider();
+      }
+
+      function goToSlide(index) {
+        currentSlide = index;
+        updateSlider();
+      }
+
+      function updateSlider() {
+        const container = document.querySelector('.slider-container');
+        const dots = document.querySelectorAll('.slider-dot');
+
+        if (container) {
+          container.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        dots.forEach((dot, index) => {
+          dot.classList.toggle('active', index === currentSlide);
+        });
+      }
+
+      function closePanel() {
+        document.querySelector(".overlay").classList.remove("active");
+        document.querySelector(".slide-panel").classList.remove("active");
+        document.body.style.overflow = "";
+      }
+
+      // Close panel on ESC key
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closePanel();
+        }
+      });
+    </script>
+  </body>
+</html>
