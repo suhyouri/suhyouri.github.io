@@ -1,7 +1,7 @@
 <h2 class="panel-title">영-영, Pointless Sight</h2>
 <div class="panel-meta">VR 게임 · 2018 · 가상현실</div>
 
-<div class="panel-image">
+<div class="panel-image portrait-images">
   <div class="image-slider">
     <button class="slider-btn prev" onclick="moveSlide(-1)">‹</button>
     <button class="slider-btn next" onclick="moveSlide(1)">›</button>
@@ -15,6 +15,7 @@
       <span class="slider-dot active" onclick="goToSlide(0)"></span>
       <span class="slider-dot" onclick="goToSlide(1)"></span>
       <span class="slider-dot" onclick="goToSlide(2)"></span>
+      <span class="slider-dot" onclick="goToSlide(3)"></span>
     </div>
   </div>
 </div>
@@ -32,41 +33,110 @@
     곳. <br /><br />다시 그림자 뒤로 숨기. 어둠 이불.
   </p>
 
-  <p>
-    [작가노트 중]<br /><br />
-
-    어둠은 나를 덮는 큰 이불.<br />
-    그림자를 지우기 위해 그림자가 되는 곳이다.<br />
-    내가 나를 볼 수 없고 남도 나를 볼 수 없는 곳.<br />
-    난 무엇도 될 수 있으며 무엇이 아닐 수도 있다.<br />
-    더 정확히는 그 무엇이 아니어도 된다.<br />
-    하나의 어둠이 되면 된다.<br /><br />
-
-    :<br /><br />
-
-    어둠 속에서는 누구의 몸도 그냥 몸일 뿐이었다. 어둠은 모두를 조심스럽게
-    만들었다. 천천히. 어둠속에서 달리는 사람은 없었다. 눈이 어둠에 익숙해 질
-    때를 기다렸다. 어둠 속에선 눈을 뜬 것이나 눈을 감은 것이나 다를게 없었다.
-    눈이 어둠에 익숙해진다는건 어둠에 익숙해지는 일이 아니라 눈이 빛을 최대한
-    찾아내는 일이었다. 빛이 없는 어둠에선 찾을 수 있는 게 아무것도 없었다. 어둠
-    속에 있으니 어디까지가 내 몸인지, 몸이 있긴 했었는지 헷갈리기 시작했다. 어둠
-    속에선 그런 것들이 다 상관 없는지도 모른다. 경계가 사라지고 모든게 한
-    덩어리인 곳에선.<br /><br />
-
-    :<br /><br />
-
-    “책상 모서리에 몸이 스칠 때<br />
-    아, 내가 아직 여기 있구나 하는 생각,<br />
-    물로 채워진 어떤 덩어리에 대한 생각:<br />
-    그리고 가끔 죽은 사람 생각이 들곤 하는데”<br /><br />
-
-    <우울한 거울1> , 황지우
-  </p>
-
   <a
     href="https://youriiiiiiiiiiii.itch.io/0-0-pointless-sight"
     target="_blank"
   >
     → 다운로드
   </a>
+</div>
+
+<!-- Accordion Section -->
+<div class="accordion-container">
+  <!-- 작업노트 -->
+  <div class="accordion-item">
+    <button class="accordion-header" onclick="toggleAccordion(this)">
+      <span>작업노트</span>
+      <span class="accordion-icon">+</span>
+    </button>
+    <div class="accordion-content">
+      <p>
+        어둠은 나를 덮는 큰 이불.<br />
+        그림자를 지우기 위해 그림자가 되는 곳이다.<br />
+        내가 나를 볼 수 없고 남도 나를 볼 수 없는 곳.<br />
+        난 무엇도 될 수 있으며 무엇이 아닐 수도 있다.<br />
+        더 정확히는 그 무엇이 아니어도 된다.<br />
+        하나의 어둠이 되면 된다.<br /><br />
+
+        :<br /><br />
+
+        어둠 속에서는 누구의 몸도 그냥 몸일 뿐이었다. <br />어둠은 모두를
+        조심스럽게 만들었다. 천천히. 어둠속에서 달리는 사람은 없었다. <br />눈이
+        어둠에 익숙해 질 때를 기다렸다. <br />어둠 속에선 눈을 뜬 것이나 눈을
+        감은 것이나 다를게 없었다. <br />눈이 어둠에 익숙해진다는건 어둠에
+        익숙해지는 일이 아니라 눈이 빛을 최대한 찾아내는 일이었다. <br />빛이
+        없는 어둠에선 찾을 수 있는 게 아무것도 없었다. <br />어둠 속에 있으니
+        어디까지가 내 몸인지, 몸이 있긴 했었는지 헷갈리기 시작했다. <br />어둠
+        속에선 그런 것들이 다 상관 없는지도 모른다. <br />경계가 사라지고 모든게
+        한 덩어리인 곳에선.<br /><br />
+
+        :<br /><br />
+
+        “책상 모서리에 몸이 스칠 때<br />
+        아, 내가 아직 여기 있구나 하는 생각,<br />
+        물로 채워진 어떤 덩어리에 대한 생각:<br />
+        그리고 가끔 죽은 사람 생각이 들곤 하는데”<br /><br />
+
+        우울한 거울1, 황지우
+        <br />
+        <br />
+      </p>
+    </div>
+  </div>
+
+  <!-- 비디오 -->
+  <div class="accordion-item">
+    <button class="accordion-header" onclick="toggleAccordion(this)">
+      <span>비디오</span>
+      <span class="accordion-icon">+</span>
+    </button>
+    <div class="accordion-content">
+      <div class="video-container">
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/OGwQoQVzR0c?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+            "
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 크레딧 -->
+  <div class="accordion-item">
+    <button class="accordion-header" onclick="toggleAccordion(this)">
+      <span>크레딧</span>
+      <span class="accordion-icon">+</span>
+    </button>
+    <div class="accordion-content">
+      <div class="credits-list">
+        <div class="credit-item">
+          <div class="credit-role">제작</div>
+          <div class="credit-name">서유리</div>
+        </div>
+        <div class="credit-item">
+          <div class="credit-role">연도</div>
+          <div class="credit-name">2018</div>
+        </div>
+        <div class="credit-item">
+          <div class="credit-role">플랫폼</div>
+          <div class="credit-name">HTC Vive</div>
+        </div>
+        <div class="credit-item">
+          <div class="credit-role">개발 도구</div>
+          <div class="credit-name">Unity, C#</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

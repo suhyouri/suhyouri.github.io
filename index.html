@@ -318,6 +318,15 @@
         text-align: justify;
       }
 
+      .panel-description a {
+        color: #000;
+        text-decoration: none;
+      }
+
+      .panel-description a:hover {
+        opacity: 0.7;
+      }
+
       .panel-image {
         width: 100%;
         max-width: 700px;
@@ -645,6 +654,30 @@
         opacity: 0.7;
       }
 
+      /* Video Container Styles */
+      .video-container {
+        width: 100%;
+        max-width: 700px;
+        margin: 20px 0;
+      }
+
+      .video-wrapper {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+      }
+
+      .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
       @media (max-width: 768px) {
         .lang-toggle {
           top: 30px;
@@ -870,8 +903,8 @@
             openProject('workshop3');
             return false;
           "
-          >Physical Computing, Department of Intermedia Arts, Kaywon University
-          of Art & Design</a
+          >Physical Computing & Modeling & Game/Play & Handmade Web, Intermedia
+          Arts, Kaywon University of Art & Design</a
         >
       </li>
     </ul>
