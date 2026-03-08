@@ -1,25 +1,1057 @@
-<h2 class="panel-title">회로가 만드는 기억 — PCB 키트</h2>
+<h2 class="panel-title">기억을 만드는 회로 — PCB 키트</h2>
 <div class="panel-meta">2024 · 경기문화재단 예술인 자립 지원</div>
 
-<div class="panel-image">
+<div class="panel-image portrait-images">
   <div class="image-slider">
     <button class="slider-btn prev" onclick="moveSlide(-1)">‹</button>
     <button class="slider-btn next" onclick="moveSlide(1)">›</button>
     <div class="slider-container">
-      <img src="../images/circuit_00.webp" alt="회로가 만드는 기억 — PCB 키트" />
-      <img src="../images/circuit_01.webp" alt="회로가 만드는 기억 — PCB 키트" />
-      <img src="../images/circuit_02.webp" alt="회로가 만드는 기억 — PCB 키트" />
+      <img
+        src="../images/circuit_00.webp"
+        alt="회로가 만드는 기억 — PCB 키트"
+      />
+      <img
+        src="../images/circuit_01.webp"
+        alt="회로가 만드는 기억 — PCB 키트"
+      />
+      <img
+        src="../images/circuit_02.webp"
+        alt="회로가 만드는 기억 — PCB 키트"
+      />
+      <img
+        src="../images/circuit_03.webp"
+        alt="회로가 만드는 기억 — PCB 키트"
+      />
     </div>
     <div class="slider-dots">
       <span class="slider-dot active" onclick="goToSlide(0)"></span>
       <span class="slider-dot" onclick="goToSlide(1)"></span>
       <span class="slider-dot" onclick="goToSlide(2)"></span>
+      <span class="slider-dot" onclick="goToSlide(3)"></span>
     </div>
   </div>
 </div>
 
 <div class="panel-description">
-  <p>기억과 전자 회로를 예술적 재료로 탐구하는 DIY PCB 키트입니다. 회로가 어떻게 기억을 체현하고 만들어낼 수 있는지 실험합니다.</p>
+  <p>
+    기억과 전자 회로를 예술적 재료로 탐구하는 기억을 만드는 회로(A-C)와
+    발진기(D), 도통테스트(E)로 이루어진 DIY PCB 키트입니다. 기억을 만드는 회로를
+    만들어보며, 컴퓨터가 어떻게 기억하고, 잊을 수 있는지 살펴봅니다. 기억의
+    구성요소에 대해 함께 알아보며, 인쇄된 회로 기판의 디자인과 조립을 통해
+    참여자들은 전자적 경로와 기억의 경로 사이의 관계를 탐구합니다.
+  </p>
+</div>
 
-  <p>맞춤형 인쇄 회로 기판의 디자인과 조립을 통해, 참여자들은 전자적 경로와 기억의 경로 사이의 관계를 탐구합니다. 이 키트는 사용자들이 기술을 단순한 도구가 아닌, 개인적 서사를 담고 표현할 수 있는 매체로 생각하도록 초대합니다.</p>
+<!-- Accordion Section -->
+<div class="accordion-container">
+  <!-- Works -->
+  <div class="accordion-item">
+    <button class="accordion-header" onclick="toggleAccordion(this)">
+      <span>Works</span>
+      <span class="accordion-icon">+</span>
+    </button>
+    <div class="accordion-content">
+      <ul class="accordion-list">
+        <li>
+          <strong>A. 기억의 재료 (Materials of Memory)</strong><br />
+          <span class="work-description"
+            >컴퓨터의 기억을 구성하는 재료인 논리회로 NOT, AND, OR를 만들어보는
+            보드</span
+          >
+        </li>
+        <li>
+          <strong>B. 기억을 만드는 회로 (Latch)</strong><br />
+          <span class="work-description"
+            >NOT, AND, OR로 1bit를 기억하고, 잊는 회로를 만드는 보드</span
+          >
+        </li>
+        <li>
+          <strong>C. 기억을 만드는 회로(A+B) Memory Circuit(A+B)</strong><br />
+          <span class="work-description"
+            >(A) 기억의 재료와 (B) 기억을 만드는 회로를 합친 버전으로 워크샵용
+            보드</span
+          >
+        </li>
+        <li>
+          <strong>D. OSC</strong><br />
+          <span class="work-description"
+            >톱니파를 내는 발진기로 캐패시터와 저항값을 바꿔가며 다양한 소리를
+            실험할 수 있는 보드</span
+          >
+        </li>
+        <li>
+          <strong>E. Mini Handshake</strong><br />
+          <span class="work-description"
+            >미세전류를 흘려 전기 연결을 테스트하는 도통테스트 보드</span
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Design -->
+  <div class="accordion-item">
+    <button class="accordion-header" onclick="toggleAccordion(this)">
+      <span>Design</span>
+      <span class="accordion-icon">+</span>
+    </button>
+    <div class="accordion-content">
+      <div class="poster-grid">
+        <div class="poster-item">
+          <img src="../images/circuit_design_a.webp" alt="Circuit A Design" />
+          <p>A. 기억의 재료 (앞면)</p>
+        </div>
+        <div class="poster-item">
+          <img
+            src="../images/circuit_design_a2.webp"
+            alt="Circuit A Design (Back)"
+          />
+          <p>A. 기억의 재료 (뒷면)</p>
+        </div>
+        <div class="poster-item">
+          <img src="../images/circuit_design_b.webp" alt="Circuit B Design" />
+          <p>B. 기억을 만드는 회로 (앞면)</p>
+        </div>
+        <div class="poster-item">
+          <img src="../images/circuit_design_b2.webp" alt="Circuit C Design" />
+          <p>B. 기억을 만드는 회로 (뒷면)</p>
+        </div>
+        <div class="poster-item">
+          <img src="../images/circuit_design_c.webp" alt="Circuit D Design" />
+          <p>C. 기억을 만드는 회로(A+B) (앞면)</p>
+        </div>
+        <div class="poster-item">
+          <img src="../images/circuit_design_c2.webp" alt="Circuit E Design" />
+          <p>C. 기억을 만드는 회로(A+B) (뒷면)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOM -->
+  <div class="accordion-item">
+    <button class="accordion-header" onclick="toggleAccordion(this)">
+      <span>BOM (Bill of Materials)</span>
+      <span class="accordion-icon">+</span>
+    </button>
+    <div class="accordion-content">
+      <div style="padding: 0 0 20px 0">
+        <!-- Board A -->
+        <h3
+          style="
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 0;
+            margin-bottom: 15px;
+          "
+        >
+          A. 기억의 재료
+        </h3>
+        <table class="bom-table">
+          <thead>
+            <tr>
+              <th>번호</th>
+              <th>부품명</th>
+              <th>수량</th>
+              <th>링크</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>LED</td>
+              <td>3개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=2851"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Transistor (bc547)</td>
+              <td>5개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=1624"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>PCB Support(F) M3x20</td>
+              <td>5개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=4509"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>M3 Bolt</td>
+              <td>5개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=3164"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Resistor 220Ω</td>
+              <td>11개</td>
+              <td>
+                <a
+                  href="https://www.digikey.kr/ko/products/detail/yageo/CFR-25JR-52-220R/11958"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Resistor 1kΩ</td>
+              <td>3개</td>
+              <td>
+                <a
+                  href="https://www.digikey.kr/ko/products/detail/yageo/CFR-25JR-52-1K/11974"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Power Switch</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.digikey.kr/en/products/detail/same-sky/MSS-102559-14A-D/13978983"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Tact Switch</td>
+              <td>3개</td>
+              <td>
+                <a
+                  href="https://orders.pay.naver.com/order/status/2024092831197430"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Terminal Block</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=10539785"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Coin Battery Holder (6v)</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=1278961"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>CR2032</td>
+              <td>2개</td>
+              <td>
+                <a
+                  href="https://smartstore.naver.com/sellernzenith/products/10329445452"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Board B -->
+        <h3
+          style="
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 30px;
+            margin-bottom: 15px;
+          "
+        >
+          B. 기억을 만드는 회로
+        </h3>
+        <table class="bom-table">
+          <thead>
+            <tr>
+              <th>번호</th>
+              <th>부품명</th>
+              <th>수량</th>
+              <th>링크</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>LED</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=2851"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>NOT (74HC04)</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=1057670"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>AND (74HC08)</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=140"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>OR (74HC032)</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=149"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Resistor 220Ω</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.digikey.kr/ko/products/detail/yageo/CFR-25JR-52-220R/11958"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Resistor 1kΩ</td>
+              <td>2개</td>
+              <td>
+                <a
+                  href="https://www.digikey.kr/ko/products/detail/yageo/CFR-25JR-52-1K/11974"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Coin Battery Holder (3v)</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.digikey.kr/ko/products/detail/mpd-memory-protection-devices/BU2032SM-JJ-GTR/1596664"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>CR2032</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://smartstore.naver.com/sellernzenith/products/10329445452"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>PCB Support(F) M3x20</td>
+              <td>4개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=4509"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>M3 Bolt</td>
+              <td>4개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=3164"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Tact Switch</td>
+              <td>2개</td>
+              <td>
+                <a
+                  href="https://orders.pay.naver.com/order/status/2024092831197430"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Power Switch</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.digikey.kr/en/products/detail/same-sky/MSS-102559-14A-D/13978983"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Board C -->
+        <h3
+          style="
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 30px;
+            margin-bottom: 15px;
+          "
+        >
+          C. 기억을 만드는 회로(A+B)
+        </h3>
+        <table class="bom-table">
+          <thead>
+            <tr>
+              <th>번호</th>
+              <th>부품명</th>
+              <th>수량</th>
+              <th>링크</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>LED</td>
+              <td>4개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=2851"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>NOT (74HC04)</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=1057670"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>AND (74HC08)</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=140"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>OR (74HC032)</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=149"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Resistor 220Ω</td>
+              <td>12개</td>
+              <td>
+                <a
+                  href="https://www.digikey.kr/ko/products/detail/yageo/CFR-25JR-52-220R/11958"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Resistor 1kΩ</td>
+              <td>5개</td>
+              <td>
+                <a
+                  href="https://www.digikey.kr/ko/products/detail/yageo/CFR-25JR-52-1K/11974"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Coin Battery Holder (6v)</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=1278961"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>CR2032</td>
+              <td>2개</td>
+              <td>
+                <a
+                  href="https://smartstore.naver.com/sellernzenith/products/10329445452"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>PCB Support(F) M3x20</td>
+              <td>4개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=4509"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>M3 Bolt</td>
+              <td>4개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=3164"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Tact Switch</td>
+              <td>5개</td>
+              <td>
+                <a
+                  href="https://orders.pay.naver.com/order/status/2024092831197430"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Power Switch</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.digikey.kr/en/products/detail/same-sky/MSS-102559-14A-D/13978983"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>Transistor (bc547)</td>
+              <td>3개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=1624"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>Terminal Block</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://orders.pay.naver.com/order/status/2024092831197430"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Board D -->
+        <h3
+          style="
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 30px;
+            margin-bottom: 15px;
+          "
+        >
+          D. OSC
+        </h3>
+        <table class="bom-table">
+          <thead>
+            <tr>
+              <th>번호</th>
+              <th>부품명</th>
+              <th>수량</th>
+              <th>링크</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>LED</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=2851"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>CD40106BE</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.digikey.kr/en/products/detail/texas-instruments/CD40106BE/376602"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Resistor 220Ω</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.digikey.kr/ko/products/detail/yageo/CFR-25JR-52-220R/11958"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Capacitor 470uF</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=1401"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Capacitor 220uF</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=1330758"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Photoresistor</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=14992301"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Coin Battery Holder (6v)</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=1278961"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>CR2032</td>
+              <td>2개</td>
+              <td>
+                <a
+                  href="https://smartstore.naver.com/sellernzenith/products/10329445452"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>PCB Support(F) M3x20</td>
+              <td>3개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=4509"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>M3 Bolt</td>
+              <td>3개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=3164"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Pin Header Socket (1x4pin)</td>
+              <td>2개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=12493"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Power Switch</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.digikey.kr/en/products/detail/same-sky/MSS-102559-14A-D/13978983"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>3.5mm Jack</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.thonk.co.uk/shop/3-5mm-jacks/"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>Terminal Block</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=10539785"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Board E -->
+        <h3
+          style="
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 30px;
+            margin-bottom: 15px;
+          "
+        >
+          E. Mini Handshake
+        </h3>
+        <table class="bom-table">
+          <thead>
+            <tr>
+              <th>번호</th>
+              <th>부품명</th>
+              <th>수량</th>
+              <th>링크</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>LED</td>
+              <td>2개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=2851"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Resistor 100Ω</td>
+              <td>2개</td>
+              <td>
+                <a
+                  href="https://www.digikey.kr/ko/products/detail/yageo/CFR-25JR-52-100R/11950"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Resistor 1kΩ</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.digikey.kr/ko/products/detail/yageo/CFR-25JR-52-1K/11974"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Resistor 10kΩ</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.digikey.kr/ko/products/detail/yageo/CFR-25JR-52-10K/11998"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Transistor (bc547)</td>
+              <td>3개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=1624"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Coin Battery Holder (6v)</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=1278961"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>CR2032</td>
+              <td>2개</td>
+              <td>
+                <a
+                  href="https://smartstore.naver.com/sellernzenith/products/10329445452"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Terminal Block</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=10539785"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Power Switch</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.digikey.kr/en/products/detail/same-sky/MSS-102559-14A-D/13978983"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>PCB Support(F) M3x20</td>
+              <td>4개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=4509"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>M3 Bolt</td>
+              <td>4개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=3164"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Buzzer (3v)</td>
+              <td>1개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=1361183"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>Pin Header Socket (1pin)</td>
+              <td>2개</td>
+              <td>
+                <a
+                  href="https://www.devicemart.co.kr/goods/view?no=12493"
+                  target="_blank"
+                  >링크</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Credits -->
+  <div class="accordion-item">
+    <button class="accordion-header" onclick="toggleAccordion(this)">
+      <span>Credits</span>
+      <span class="accordion-icon">+</span>
+    </button>
+    <div class="accordion-content">
+      <div class="credits-list">
+        <div class="credit-item">
+          <div class="credit-role">아티스트 & PCB 디자이너</div>
+          <div class="credit-name">서유리</div>
+        </div>
+        <div class="credit-item">
+          <div class="credit-role">브로슈어 디자이너 & 작가</div>
+          <div class="credit-name">박지호</div>
+        </div>
+        <div class="credit-item">
+          <div class="credit-role">회로 자문 & 검토</div>
+          <div class="credit-name">오세민</div>
+        </div>
+        <div class="credit-item">
+          <div class="credit-role">지원</div>
+          <div class="credit-name">경기문화재단</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

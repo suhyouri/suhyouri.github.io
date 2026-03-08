@@ -339,6 +339,20 @@
         object-fit: cover;
       }
 
+      /* Portrait images style */
+      .panel-image.portrait-images {
+        background: #ffffff;
+      }
+
+      .panel-image.portrait-images img {
+        object-fit: contain;
+      }
+
+      /* Rotate specific images */
+      .panel-image img[src*="circuit_02.webp"] {
+        transform: rotate(90deg);
+      }
+
       /* Image Slider */
       .image-slider {
         position: relative;
@@ -576,6 +590,61 @@
         font-weight: 400;
       }
 
+      /* BOM Table Styles */
+      .bom-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        font-size: 15px;
+      }
+
+      .bom-table thead {
+        background: #f5f5f5;
+      }
+
+      .bom-table th {
+        padding: 10px 12px;
+        text-align: left;
+        font-weight: 400;
+        border: 1px solid #e0e0e0;
+      }
+
+      .bom-table td {
+        padding: 8px 12px;
+        border: 1px solid #e0e0e0;
+      }
+
+      .bom-table tbody tr:hover {
+        background: #fafafa;
+      }
+
+      .bom-table th:first-child,
+      .bom-table td:first-child {
+        width: 60px;
+        text-align: center;
+      }
+
+      .bom-table th:nth-child(3),
+      .bom-table td:nth-child(3) {
+        width: 80px;
+        text-align: center;
+      }
+
+      .bom-table th:nth-child(4),
+      .bom-table td:nth-child(4) {
+        width: 60px;
+        text-align: center;
+      }
+
+      .bom-table a {
+        color: #000;
+        text-decoration: underline;
+      }
+
+      .bom-table a:hover {
+        opacity: 0.7;
+      }
+
       @media (max-width: 768px) {
         .lang-toggle {
           top: 30px;
@@ -692,7 +761,8 @@
             openProject('research');
             return false;
           "
-          >Research on the Walking Methods of Inanimate Objects</a
+          >Walking Mirror: Research on the Walking Methods of Inanimate
+          Objects</a
         >
       </li>
       <li>
@@ -739,7 +809,7 @@
             openProject('research');
             return false;
           "
-          >무생물의 걷기 방법에 대한 연구</a
+          >걷는 거울: 무생물의 걷기 방법에 대한 연구</a
         >
       </li>
       <li>
@@ -865,7 +935,7 @@
           openProject('archives');
           return false;
         "
-        >아카이브</a
+        >→ 아카이브</a
       >
     </div>
 
