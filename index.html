@@ -378,16 +378,47 @@
         object-fit: contain;
       }
 
-      /* Rotate specific images */
-      .panel-image img[src*="circuit_02.webp"] {
-        transform: rotate(90deg);
-      }
-
       /* Rotate workshop2 portrait images */
       .panel-image img[src*="workshop2_result_03.webp"],
       .panel-image img[src*="workshop2_result_04.webp"],
       .panel-image img[src*="workshop2_result_05.webp"] {
         transform: rotate(90deg);
+      }
+
+      /* Circuit project - contain for portrait images */
+      .panel-image:has(img[src*="circuit_01.webp"]),
+      .panel-image:has(img[src*="circuit_02.webp"]),
+      .panel-image:has(img[src*="circuit_03.webp"]) {
+        background: #ffffff;
+      }
+
+      .panel-image img[src*="circuit_01.webp"],
+      .panel-image img[src*="circuit_02.webp"],
+      .panel-image img[src*="circuit_03.webp"] {
+        object-fit: contain;
+      }
+
+      /* Rotate circuit_02 90 degrees */
+      .panel-image img[src*="circuit_02.webp"] {
+        transform: rotate(90deg);
+      }
+
+      /* Game project - contain for portrait image */
+      .panel-image:has(img[src*="game_01.webp"]) {
+        background: #ffffff;
+      }
+
+      .panel-image img[src*="game_01.webp"] {
+        object-fit: contain;
+      }
+
+      /* Research project - contain for portrait images */
+      .panel-image:has(img[src*="research_"][src$=".webp"]) {
+        background: #ffffff;
+      }
+
+      .panel-image img[src*="research_"][src$=".webp"] {
+        object-fit: contain;
       }
 
       /* Image Slider */
@@ -759,13 +790,11 @@
 
     <h1 class="en">
       <a href="https://www.instagram.com/suhyouri" target="_blank"
-        >✦ Youri Suh(Work in Progress)</a
+        >✦ Youri Suh</a
       >
     </h1>
     <h1 class="kr hidden">
-      <a href="https://www.instagram.com/suhyouri" target="_blank"
-        >✦ 서유리(작업중~)</a
-      >
+      <a href="https://www.instagram.com/suhyouri" target="_blank">✦ 서유리</a>
     </h1>
 
     <div class="intro en">
