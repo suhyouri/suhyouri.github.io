@@ -351,14 +351,42 @@
       /* Portrait images style */
       .panel-image.portrait-images {
         background: #ffffff;
+        aspect-ratio: auto;
+        height: auto;
       }
 
       .panel-image.portrait-images img {
         object-fit: contain;
       }
 
+      .panel-image.portrait-images .slider-container {
+        height: auto;
+      }
+
+      .panel-image.portrait-images .slider-container img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      /* Workshop2 slider - contain for portrait images */
+      .panel-image.workshop2-slider {
+        background: #ffffff;
+      }
+
+      .panel-image.workshop2-slider .slider-container img {
+        object-fit: contain;
+      }
+
       /* Rotate specific images */
       .panel-image img[src*="circuit_02.webp"] {
+        transform: rotate(90deg);
+      }
+
+      /* Rotate workshop2 portrait images */
+      .panel-image img[src*="workshop2_result_03.webp"],
+      .panel-image img[src*="workshop2_result_04.webp"],
+      .panel-image img[src*="workshop2_result_05.webp"] {
         transform: rotate(90deg);
       }
 
@@ -896,14 +924,7 @@
       </li>
       <li>
         <span class="number">03</span>
-        <a
-          href="#"
-          onclick="
-            openProject('workshop3');
-            return false;
-          "
-          >Lecturer, Intermedia Arts, Kaywon University of Art & Design</a
-        >
+        Lecturer, Intermedia Arts, Kaywon University of Art & Design
       </li>
     </ul>
 
@@ -932,14 +953,7 @@
       </li>
       <li>
         <span class="number">03</span>
-        <a
-          href="#"
-          onclick="
-            openProject('workshop3');
-            return false;
-          "
-          >계원예술대학교 융합예술과 출강</a
-        >
+        계원예술대학교 융합예술과 출강
       </li>
     </ul>
 
