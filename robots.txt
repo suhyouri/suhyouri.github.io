@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://suhyouri.github.io/sitemap.xml
