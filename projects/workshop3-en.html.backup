@@ -23,27 +23,147 @@
 
 <div class="panel-description">
   <p>
-    Teaching a progressive curriculum in creative technology at Kaywon
-    University of Art & Design's Department of Intermedia Arts. First-year
-    students explore interactive systems through games, storytelling, and
-    documentary practices. Second-year courses focus on physical computing with
-    Arduino, circuit design, and digital fabrication using Fusion360, laser
-    cutting, and 3D printing. Third-year students develop advanced projects in
-    web development and interactive installations.
+    Teaching courses in interactive media and electronic circuits at Kaywon
+    University of Art & Design's Department of Intermedia Arts. The curriculum
+    focuses on creative technology, introducing students to physical computing,
+    circuit design, prototyping, and digital fabrication through hands-on
+    projects.
   </p>
 
   <p>
-    The curriculum emphasizes hands-on experimentation and conceptual
-    development. Students learn to work with sensors, actuators, microcontrollers,
-    and web technologies while developing their artistic voice. Projects range
-    from interactive narratives and data-driven installations to personal
-    websites and collaborative platforms, bridging technical skills with
-    creative practice.
+    Students explore the intersection of art and technology by building
+    interactive systems using Arduino, sensors, and actuators. The course
+    emphasizes creative problem-solving, technical skills, and conceptual
+    development, encouraging students to develop their own artistic voice
+    through technology-based practice.
   </p>
 </div>
 
 <!-- Accordion Section -->
 <div class="accordion-container">
+  <!-- Spring 2023 Semester -->
+  <div class="accordion-item">
+    <button class="accordion-header" onclick="toggleAccordion(this)">
+      <span>Spring 2023: Computer Creation 2</span>
+      <span class="accordion-icon">+</span>
+    </button>
+    <div class="accordion-content">
+      <div class="course-callout">
+        <p>
+          <strong>Goals:</strong> Learn physical computing fundamentals, develop
+          prototyping and fabrication skills, explore the intersection of art
+          and technology through hands-on practice
+        </p>
+        <p>
+          <strong>Keywords:</strong> Arduino · Physical Computing · Prototyping
+          · Digital Fabrication
+        </p>
+      </div>
+      <table class="bom-table">
+        <thead>
+          <tr>
+            <th>Week</th>
+            <th>Topic</th>
+            <th>Type</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01</td>
+            <td>Course Introduction & Goals</td>
+            <td>Introduction</td>
+            <td>March 7, 2023</td>
+          </tr>
+          <tr>
+            <td>02</td>
+            <td>Contemporary Technology Art Trends</td>
+            <td>Theory</td>
+            <td>March 14, 2023</td>
+          </tr>
+          <tr>
+            <td>03</td>
+            <td>Basics of Electronics</td>
+            <td>Theory</td>
+            <td>March 21, 2023</td>
+          </tr>
+          <tr>
+            <td>04</td>
+            <td>Prototyping</td>
+            <td>Theory</td>
+            <td>March 28, 2023</td>
+          </tr>
+          <tr>
+            <td>05</td>
+            <td>Olchiro Technical Map</td>
+            <td>Field Trip</td>
+            <td>April 4, 2023</td>
+          </tr>
+          <tr>
+            <td>06</td>
+            <td>Electricity as Force: Power</td>
+            <td>Practice</td>
+            <td>April 11, 2023</td>
+          </tr>
+          <tr>
+            <td>07</td>
+            <td>Electricity as Signal: On/Off</td>
+            <td>Practice</td>
+            <td>April 18, 2023</td>
+          </tr>
+          <tr>
+            <td>08</td>
+            <td>Midterm Exam</td>
+            <td>Exam</td>
+            <td>April 25, 2023</td>
+          </tr>
+          <tr>
+            <td>09</td>
+            <td>Electricity as Wave: Analog</td>
+            <td>Practice</td>
+            <td>May 2, 2023</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Fusion360 Basics 1: 2D Design</td>
+            <td>Software</td>
+            <td>May 9, 2023</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Fusion360 Basics 2: 3D Modeling</td>
+            <td>Software</td>
+            <td>May 16, 2023</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Design Proposal Presentation</td>
+            <td>Presentation</td>
+            <td>May 23, 2023</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Laser Cutting / 3D Printing</td>
+            <td>Practice</td>
+            <td>May 30, 2023</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Project Progress Review + Olchiro</td>
+            <td>Review/Field Trip</td>
+            <td>June 13, 2023</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Final Presentation</td>
+            <td>Final Exam</td>
+            <td>June 20, 2023</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
   <!-- Spring 2026: New Media Workshop -->
   <div class="accordion-item">
     <button class="accordion-header" onclick="toggleAccordion(this)">
@@ -1141,129 +1261,6 @@
     </div>
   </div>
 
-  <!-- Fall 2023: Technology-Based Studio -->
-  <div class="accordion-item">
-    <button class="accordion-header" onclick="toggleAccordion(this)">
-      <span>Fall 2023: Technology-Based Studio (Year 3)</span>
-      <span class="accordion-icon">+</span>
-    </button>
-    <div class="accordion-content">
-      <div class="course-callout">
-        <p>
-          <strong>Goals:</strong> Master Arduino fundamentals and develop
-          independent creative projects combining physical computing with
-          artistic practice
-        </p>
-        <p>
-          <strong>Keywords:</strong> Arduino · Physical Computing · Student
-          Presentations · Creative Practice
-        </p>
-      </div>
-      <table class="bom-table">
-        <thead>
-          <tr>
-            <th>Week</th>
-            <th>Topic</th>
-            <th>Type</th>
-            <th>Date</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>01</td>
-            <td>Introduction</td>
-            <td>Introduction</td>
-            <td>September 6, 2023</td>
-          </tr>
-          <tr>
-            <td>02</td>
-            <td>Arduino Basic Project</td>
-            <td>Practice</td>
-            <td>September 13, 2023</td>
-          </tr>
-          <tr>
-            <td>03</td>
-            <td>What is Arduino?</td>
-            <td>Theory</td>
-            <td>September 20, 2023</td>
-          </tr>
-          <tr>
-            <td>04</td>
-            <td>Digital I/O</td>
-            <td>Practice</td>
-            <td>September 27, 2023</td>
-          </tr>
-          <tr>
-            <td>05</td>
-            <td>Analog I/O</td>
-            <td>Practice</td>
-            <td>October 4, 2023</td>
-          </tr>
-          <tr>
-            <td>06</td>
-            <td>Recap + Array</td>
-            <td>Practice</td>
-            <td>October 11, 2023</td>
-          </tr>
-          <tr>
-            <td>07</td>
-            <td>Sensor + Motion</td>
-            <td>Practice</td>
-            <td>October 18, 2023</td>
-          </tr>
-          <tr>
-            <td>08</td>
-            <td>Midterm</td>
-            <td>Exam</td>
-            <td>October 25, 2023</td>
-          </tr>
-          <tr>
-            <td>09</td>
-            <td>Work Research 1</td>
-            <td>Presentation</td>
-            <td>November 1, 2023</td>
-          </tr>
-          <tr>
-            <td>10</td>
-            <td>Work Research 2</td>
-            <td>Presentation</td>
-            <td>November 8, 2023</td>
-          </tr>
-          <tr>
-            <td>11</td>
-            <td>Work Research 3</td>
-            <td>Presentation</td>
-            <td>November 15, 2023</td>
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>Work Research 4</td>
-            <td>Presentation</td>
-            <td>November 22, 2023</td>
-          </tr>
-          <tr>
-            <td>13</td>
-            <td>Work Research 5</td>
-            <td>Presentation</td>
-            <td>November 29, 2023</td>
-          </tr>
-          <tr>
-            <td>14</td>
-            <td>Soldering Workshop</td>
-            <td>Workshop</td>
-            <td>December 6, 2023</td>
-          </tr>
-          <tr>
-            <td>15</td>
-            <td>Final Presentation</td>
-            <td>Final Exam</td>
-            <td>December 13, 2023</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
   <!-- Spring 2023: Technology-Based Workshop 2 -->
   <div class="accordion-item">
     <button class="accordion-header" onclick="toggleAccordion(this)">
@@ -1379,129 +1376,6 @@
           <tr>
             <td>15</td>
             <td>Final Presentation (Results)</td>
-            <td>Final Exam</td>
-            <td>June 20, 2023</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <!-- Spring 2023: Computer Creation 2 -->
-  <div class="accordion-item">
-    <button class="accordion-header" onclick="toggleAccordion(this)">
-      <span>Spring 2023: Computer Creation 2 (Year 2)</span>
-      <span class="accordion-icon">+</span>
-    </button>
-    <div class="accordion-content">
-      <div class="course-callout">
-        <p>
-          <strong>Goals:</strong> Learn physical computing fundamentals, develop
-          prototyping and fabrication skills, explore the intersection of art
-          and technology through hands-on practice
-        </p>
-        <p>
-          <strong>Keywords:</strong> Arduino · Physical Computing · Prototyping
-          · Digital Fabrication
-        </p>
-      </div>
-      <table class="bom-table">
-        <thead>
-          <tr>
-            <th>Week</th>
-            <th>Topic</th>
-            <th>Type</th>
-            <th>Date</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>01</td>
-            <td>Course Introduction & Goals</td>
-            <td>Introduction</td>
-            <td>March 7, 2023</td>
-          </tr>
-          <tr>
-            <td>02</td>
-            <td>Contemporary Technology Art Trends</td>
-            <td>Theory</td>
-            <td>March 14, 2023</td>
-          </tr>
-          <tr>
-            <td>03</td>
-            <td>Basics of Electronics</td>
-            <td>Theory</td>
-            <td>March 21, 2023</td>
-          </tr>
-          <tr>
-            <td>04</td>
-            <td>Prototyping</td>
-            <td>Theory</td>
-            <td>March 28, 2023</td>
-          </tr>
-          <tr>
-            <td>05</td>
-            <td>Olchiro Technical Map</td>
-            <td>Field Trip</td>
-            <td>April 4, 2023</td>
-          </tr>
-          <tr>
-            <td>06</td>
-            <td>Electricity as Force: Power</td>
-            <td>Practice</td>
-            <td>April 11, 2023</td>
-          </tr>
-          <tr>
-            <td>07</td>
-            <td>Electricity as Signal: On/Off</td>
-            <td>Practice</td>
-            <td>April 18, 2023</td>
-          </tr>
-          <tr>
-            <td>08</td>
-            <td>Midterm Exam</td>
-            <td>Exam</td>
-            <td>April 25, 2023</td>
-          </tr>
-          <tr>
-            <td>09</td>
-            <td>Electricity as Wave: Analog</td>
-            <td>Practice</td>
-            <td>May 2, 2023</td>
-          </tr>
-          <tr>
-            <td>10</td>
-            <td>Fusion360 Basics 1: 2D Design</td>
-            <td>Software</td>
-            <td>May 9, 2023</td>
-          </tr>
-          <tr>
-            <td>11</td>
-            <td>Fusion360 Basics 2: 3D Modeling</td>
-            <td>Software</td>
-            <td>May 16, 2023</td>
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>Design Proposal Presentation</td>
-            <td>Presentation</td>
-            <td>May 23, 2023</td>
-          </tr>
-          <tr>
-            <td>13</td>
-            <td>Laser Cutting / 3D Printing</td>
-            <td>Practice</td>
-            <td>May 30, 2023</td>
-          </tr>
-          <tr>
-            <td>14</td>
-            <td>Project Progress Review + Olchiro</td>
-            <td>Review/Field Trip</td>
-            <td>June 13, 2023</td>
-          </tr>
-          <tr>
-            <td>15</td>
-            <td>Final Presentation</td>
             <td>Final Exam</td>
             <td>June 20, 2023</td>
           </tr>

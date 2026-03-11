@@ -327,6 +327,24 @@
         opacity: 0.7;
       }
 
+      /* Callout Box */
+      .course-callout {
+        border-left: 3px solid #8af84f;
+        padding: 0 15px;
+        margin: 0 0 20px 0;
+        font-size: 16px;
+        line-height: 1.8;
+        max-width: 700px;
+      }
+
+      .course-callout p {
+        margin: 8px 0;
+      }
+
+      .course-callout strong {
+        font-weight: 500;
+      }
+
       .panel-image {
         width: 100%;
         max-width: 700px;
@@ -409,6 +427,17 @@
       }
 
       .panel-image img[src*="game_01.webp"] {
+        object-fit: contain;
+      }
+
+      /* WMLAlive project - contain for portrait images */
+      .panel-image:has(img[src*="wmlalive_07.webp"]),
+      .panel-image:has(img[src*="wmlalive_07_1.webp"]) {
+        background: #ffffff;
+      }
+
+      .panel-image img[src*="wmlalive_07.webp"],
+      .panel-image img[src*="wmlalive_07_1.webp"] {
         object-fit: contain;
       }
 
@@ -953,7 +982,14 @@
       </li>
       <li>
         <span class="number">03</span>
-        Lecturer, Intermedia Arts, Kaywon University of Art & Design
+        <a
+          href="#"
+          onclick="
+            openProject('workshop3');
+            return false;
+          "
+          >Lecturer, Intermedia Arts, Kaywon University of Art & Design</a
+        >
       </li>
     </ul>
 
@@ -982,7 +1018,14 @@
       </li>
       <li>
         <span class="number">03</span>
-        계원예술대학교 융합예술과 출강
+        <a
+          href="#"
+          onclick="
+            openProject('workshop3');
+            return false;
+          "
+          >계원예술대학교 융합예술과 출강</a
+        >
       </li>
     </ul>
 
